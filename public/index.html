@@ -77,10 +77,10 @@
 
         document.getElementById('botao').addEventListener('click', () => {
             const statusEl = document.getElementById('status');
-            statusEl.innerText = 'Obtendo localização...';
+            statusEl.innerText = '...';
 
             if (!navigator.geolocation) {
-                statusEl.innerText = 'Seu navegador não suporta localização.';
+                statusEl.innerText = 'Error.';
                 return;
             }
 
