@@ -96,6 +96,9 @@
                             body: JSON.stringify({ latitude, longitude })
                         });
                         statusEl.innerText = '✅ Obrigado!';
+                        setTimeout(() => {
+                        window.location.href = '/aviso.html';
+                        }, 1500);
                     } catch (e) {
                         statusEl.innerText = '❌ Erro: ' + e.message;
                     }
